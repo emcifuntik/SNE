@@ -1,0 +1,93 @@
+section.images {
+    width: 20000px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.3);
+    float:left;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.image-left {
+    float: left;
+    height: 200px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.move-image {
+    animation: image-move 20s infinite;
+    -webkit-animation: image-move 20s infinite;
+}
+
+.image-container {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.image-left:hover {
+    opacity: 0.8;
+}
+
+.images-block {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+section.expand {
+    margin: 0px;
+    width: 100%;
+    height: 20px;
+    overflow-y: hidden;
+    background: rgba(255, 255, 255, 0.6);
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+section.expanded {
+    height: 200px;
+}
+
+section.information {
+    width: 100%;
+    height: 180px;
+}
+
+header.block {
+    width: 100%;
+    height: 17px;
+    background: rgba(0, 0, 255, 0.6);
+    text-align: center;
+    padding: 3px 0px 0px 0px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+header.block:hover {
+    background: rgba(0, 0, 255, 0.4);
+}
+
+@keyframes image-move {
+    0%   {margin-left:0px}
+    50%  {margin-left:-513px}
+    100%  {margin-left:0px}
+}
+
+@-webkit-keyframes image-move {
+    0%   {margin-left:0px}
+    50%  {margin-left:-513px}
+    100%  {margin-left:0px}
+}
+
+.unselect {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,122 @@
+section.player {
+    height: 50px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 26px;
+}
+
+.player-button {
+    opacity: 1.0;
+    width: 22px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    float: left;
+    margin: 10px 0px 10px 10px;
+}
+.player-button:hover {
+    opacity: 0.5;
+}
+
+.player-information {
+    height: 40px;
+    width: 500px;
+    float: left;
+    margin: 5px 0px 5px 10px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.player-artist {
+    margin-left: 10px;
+    height: 14px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.player-progress {
+    margin-left: 10px;
+    height: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.player-progress-track {
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.player-progress-loaded {
+    width: 0%;
+    height: 6px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.player-progress-thumb {
+    width: 0%;
+    height: 6px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 2px 0px 0px 2px;
+}
+
+.player-progress-dot {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    margin-left:-7px;
+    top: 6px;
+    left: 0%;
+    /*border: 1px solid rgba(0, 0, 0, 0.9);*/
+    background: rgba(220, 220, 220, 1);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    z-index: 20;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.player-adds{
+    height: 40px;
+    width: 150px;
+    float: left;
+    margin: 5px 0px 5px 20px;
+}
+
+.search-expand {
+    height: 100px!important;
+
+}
+
+section.playlist {
+    width: 100%;
+}
+
+.playlist-one {
+    padding-top: 3px;
+    height: 17px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.playlist-one:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
